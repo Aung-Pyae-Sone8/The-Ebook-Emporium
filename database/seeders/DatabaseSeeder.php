@@ -29,21 +29,6 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('admin1234'),
         ]);
 
-        // book table
-        Book::create([
-            'title' => 'A Heart That Works',
-            'author' => 'Rob Delaney',
-            'description' => "In this memoir of loss, acclaimed writer and comedian Rob Delaney grapples with the fragile miracle of life, the mysteries of death, and the question of purpose for those left behind.When you're a parent ...",
-            'category' => 'Autobiography',
-            'price' => 29,
-            'book' => 'React-book-by-Ei-Maung.pdf',
-            'image' => 'defaultUser1.phg',
-        ]);
 
-        // category table
-        Category::create([
-            'name' => 'Autobiography',
-            'description' => 'This is a description of category...',
-        ]);
     }
 }
